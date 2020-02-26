@@ -1,0 +1,6 @@
+module RxNetworkApiClient {
+  umbrella header "RxNetworkApiClient-umbrella.h"
+
+  export *
+  module * { export * }
+}

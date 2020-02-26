@@ -1,0 +1,6 @@
+module Pods_GalleryCleanSwift {
+  umbrella header "Pods-GalleryCleanSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
