@@ -1,0 +1,117 @@
+
+/* Class = "UITextField"; text = "User Name"; ObjectID = "0Xh-UR-mHG"; */
+"0Xh-UR-mHG.text" = "Имя пользователя";
+
+/* Class = "UINavigationItem"; title = "Gallery"; ObjectID = "2IS-3h-JDo"; */
+"2IS-3h-JDo.title" = "Галлерея";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "2lR-Vo-mre"; */
+"2lR-Vo-mre.title" = "Item";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "3dx-p6-EZH"; */
+"3dx-p6-EZH.placeholder" = "Поиск";
+
+/* Class = "UISearchBar"; 3dx-p6-EZH.scopeButtonTitles[0] = "Title"; ObjectID = "3dx-p6-EZH"; */
+"3dx-p6-EZH.scopeButtonTitles[0]" = "Title";
+
+/* Class = "UISearchBar"; 3dx-p6-EZH.scopeButtonTitles[1] = "Title"; ObjectID = "3dx-p6-EZH"; */
+"3dx-p6-EZH.scopeButtonTitles[1]" = "Title";
+
+/* Class = "UIButton"; normalTitle = "Sign out"; ObjectID = "7qq-RC-zh6"; */
+"7qq-RC-zh6.normalTitle" = "Выйти";
+
+/* Class = "UINavigationItem"; title = "Gallery"; ObjectID = "9gq-f6-fVm"; */
+"9gq-f6-fVm.title" = "Галлерея";
+
+/* Class = "UITextField"; placeholder = "New password"; ObjectID = "ALl-Zh-eJc"; */
+"ALl-Zh-eJc.placeholder" = "Новый пароль";
+
+/* Class = "UILabel"; text = "Welcome!"; ObjectID = "Ah1-t4-m3I"; */
+"Ah1-t4-m3I.text" = "Привет!";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "BfB-RS-FKh"; */
+"BfB-RS-FKh.title" = "Item";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "CdP-21-Kum"; */
+"CdP-21-Kum.title" = "Item";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "Dfx-tA-I3L"; */
+"Dfx-tA-I3L.title" = "Item";
+
+/* Class = "UINavigationItem"; title = "Gallery"; ObjectID = "Dkg-uv-63a"; */
+"Dkg-uv-63a.title" = "Галлерея";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "Etd-FG-0Kj"; */
+"Etd-FG-0Kj.placeholder" = "Имя";
+
+/* Class = "UITextField"; placeholder = "E-mail"; ObjectID = "GtU-BF-dhf"; */
+"GtU-BF-dhf.placeholder" = "E-mail";
+
+/* Class = "UITextField"; text = "maxches99"; ObjectID = "GtU-BF-dhf"; */
+"GtU-BF-dhf.text" = "maxches99";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "KfF-Wg-Qtw"; */
+"KfF-Wg-Qtw.title" = "Item";
+
+/* Class = "UISegmentedControl"; Ly3-dF-IKK.segmentTitles[0] = "New"; ObjectID = "Ly3-dF-IKK"; */
+"Ly3-dF-IKK.segmentTitles[0]" = "Новые";
+
+/* Class = "UISegmentedControl"; Ly3-dF-IKK.segmentTitles[1] = "Popular"; ObjectID = "Ly3-dF-IKK"; */
+"Ly3-dF-IKK.segmentTitles[1]" = "Популярные";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "QXR-5n-fgg"; */
+"QXR-5n-fgg.text" = "Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание";
+
+/* Class = "UIBarButtonItem"; title = "Save"; ObjectID = "RB3-7y-WOR"; */
+"RB3-7y-WOR.title" = "Сохранить";
+
+/* Class = "UILabel"; text = "User name"; ObjectID = "S5H-6u-StD"; */
+"S5H-6u-StD.text" = "Имя пользователя";
+
+/* Class = "UITextField"; placeholder = "Old password"; ObjectID = "XKM-qq-5GW"; */
+"XKM-qq-5GW.placeholder" = "Старый пароль";
+
+/* Class = "UILabel"; text = "User Name"; ObjectID = "ZbE-mb-aqG"; */
+"ZbE-mb-aqG.text" = "Имя пользователя";
+
+/* Class = "UITextField"; placeholder = "Confirm password"; ObjectID = "bpT-2w-ULa"; */
+"bpT-2w-ULa.placeholder" = "Подтвердите пароль";
+
+/* Class = "UILabel"; text = "E-mail adress"; ObjectID = "cJR-67-vYs"; */
+"cJR-67-vYs.text" = "E-mail адрес";
+
+/* Class = "UITextField"; placeholder = "Description"; ObjectID = "cmB-CX-ml3"; */
+"cmB-CX-ml3.placeholder" = "Описание";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "dj0-Um-rmF"; */
+"dj0-Um-rmF.text" = "Пароль";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "dlH-Eq-Ah4"; */
+"dlH-Eq-Ah4.placeholder" = "Пароль";
+
+/* Class = "UITextField"; text = "123456789"; ObjectID = "dlH-Eq-Ah4"; */
+"dlH-Eq-Ah4.text" = "123456789";
+
+/* Class = "UINavigationItem"; title = "Gallery"; ObjectID = "jqA-EN-d0d"; */
+"jqA-EN-d0d.title" = "Галлерея";
+
+/* Class = "UIBarButtonItem"; title = "Add"; ObjectID = "mUc-zl-GMm"; */
+"mUc-zl-GMm.title" = "Добавить";
+
+/* Class = "UIButton"; normalTitle = "Sign in"; ObjectID = "n2G-u5-zLl"; */
+"n2G-u5-zLl.normalTitle" = "Войти";
+
+/* Class = "UITextField"; text = "09.09.1999"; ObjectID = "rA1-Cg-y2u"; */
+"rA1-Cg-y2u.text" = "09.09.1999";
+
+/* Class = "UITextField"; text = "gosjdkal@iod.ty"; ObjectID = "rCQ-9J-Eey"; */
+"rCQ-9J-Eey.text" = "gosjdkal@iod.ty";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "shS-GK-Lwr"; */
+"shS-GK-Lwr.text" = "Имя";
+
+/* Class = "UILabel"; text = "Personal data"; ObjectID = "tVt-Nk-bwP"; */
+"tVt-Nk-bwP.text" = "Персональная информация";
+
+/* Class = "UILabel"; text = "09.09.1999"; ObjectID = "uiw-Xb-JtX"; */
+"uiw-Xb-JtX.text" = "09.09.1999";

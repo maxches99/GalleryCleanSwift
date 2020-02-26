@@ -13,7 +13,13 @@ protocol DetailConfiguratorProtocol {
 
 class DetailConfigurator: DetailConfiguratorProtocol {
     func configure(with viewController: DetailViewController) {
+        let presenter = DetailPresenter(view: viewController)
+        let interactor = DetailInteractor(presenter: presenter)
+        let router = DetailRouter(viewController: viewController)
         
+        viewController.presenter = presenter
+        presenter.interactor = interactor
+        presenter.router = router
     }
     
     

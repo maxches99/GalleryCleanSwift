@@ -7,3 +7,21 @@
 //
 
 import Foundation
+protocol ProfileSettingsRouterProtocol {
+    func closeCurrentViewController()
+}
+
+class ProfileSettingsRouter: ProfileSettingsRouterProtocol {
+    weak var viewController: ProfileSettingsViewController!
+    
+    init(viewController: ProfileSettingsViewController) {
+        self.viewController = viewController
+    }
+    
+    func closeCurrentViewController() {
+        viewController.dismiss(animated: true, completion: nil)
+        viewController.performSegue(withIdentifier: "go to tabBar from profileSettings", sender: self)
+    }
+    
+    
+}

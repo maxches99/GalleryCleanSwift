@@ -13,7 +13,13 @@ protocol ProfileSettingsConfiguratorProtocol {
 
 class ProfileSettingsConfigurator: ProfileSettingsConfiguratorProtocol {
     func configure(with viewController: ProfileSettingsViewController) {
+        let presenter = ProfileSettingsPresenter(view: viewController)
+        let interactor = ProfileSettingsInteractor(presenter: presenter)
+        let router = ProfileSettingsRouter(viewController: viewController)
         
+        viewController.presenter = presenter
+        presenter.interactor = interactor
+        presenter.router = router
     }
     
     

@@ -7,3 +7,24 @@
 //
 
 import Foundation
+
+protocol ProfileSettingsInteractorProtocol: class {
+    func loginUrl(mail: String, password: String)
+}
+
+class ProfileSettingsInteractor: ProfileSettingsInteractorProtocol {
+    
+    let serverService: ServerServiceProtocol = ServerService()
+
+    weak var presenter: ProfileSettingsPresenterProtocol!
+    
+    required init(presenter: ProfileSettingsPresenterProtocol) {
+        self.presenter = presenter
+    }
+    
+    func loginUrl(mail: String, password: String) {
+        print("interactor")
+        serverService.login(mail: mail, password: password)
+        presenter.router.closeCurrentViewController()
+    }
+}

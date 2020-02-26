@@ -7,3 +7,31 @@
 //
 
 import Foundation
+
+protocol ProfileSettingsPresenterProtocol: class {
+    var router: ProfileSettingsRouterProtocol! { set get }
+    func congigureView()
+    func loginButtonClicked(mail: String, password: String)
+}
+
+class ProfileSettingsPresenter: ProfileSettingsPresenterProtocol {
+    
+    weak var view: ProfileSettingsViewProtocol!
+    var interactor: ProfileSettingsInteractorProtocol!
+    var router: ProfileSettingsRouterProtocol!
+    
+    required init(view: ProfileSettingsViewProtocol) {
+        self.view = view
+    }
+    
+    func congigureView() {
+        
+    }
+    
+    func loginButtonClicked(mail: String, password: String) {
+        print("presenter")
+        interactor.loginUrl(mail: mail, password: password)
+    }
+    
+    
+}

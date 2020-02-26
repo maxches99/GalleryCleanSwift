@@ -27,3 +27,18 @@ struct BeginUser: Codable {
     
 
 }
+
+struct TokenError: Codable {
+    var error: String?
+    var error_description: String?
+}
+
+struct Profile: Codable {
+    let id: Int?
+    var email: String?
+    var enabled: Bool?
+    var phone: String?
+    var fullName: String?
+    var username: String?
+    var roles: [String]?
+}

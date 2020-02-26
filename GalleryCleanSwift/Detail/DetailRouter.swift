@@ -7,3 +7,14 @@
 //
 
 import Foundation
+protocol DetailRouterProtocol: class {
+    
+}
+
+class DetailRouter: DetailRouterProtocol {
+    weak var viewController: DetailViewController!
+    
+    init(viewController: DetailViewController) {
+        self.viewController = viewController
+    }
+}

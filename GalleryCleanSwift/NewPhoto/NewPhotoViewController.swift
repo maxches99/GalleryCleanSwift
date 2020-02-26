@@ -10,13 +10,21 @@ import UIKit
 
 class NewPhotoViewController: UIViewController {
 
+    
+    @IBOutlet weak var descriptionTextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func choosePhoto(_ sender: UIButton) {
+    }
+    
+    @IBAction func uploadPhoto(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

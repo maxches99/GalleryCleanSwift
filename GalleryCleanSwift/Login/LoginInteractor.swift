@@ -25,5 +25,6 @@ class LoginInteractor: LoginInteractorProtocol {
     func loginUrl(mail: String, password: String) {
         print("interactor")
         serverService.login(mail: mail, password: password)
+        presenter.router.closeCurrentViewController()
     }
 }
