@@ -18,7 +18,7 @@ protocol MainViewProtocol: class {
     func insertItems(sequince: [IndexPath])
 }
 
-class MainViewController: UIViewController, MainViewProtocol {
+class MainViewController: UIViewController, MainViewProtocol, UITextFieldDelegate {
 
     
 
@@ -42,8 +42,9 @@ class MainViewController: UIViewController, MainViewProtocol {
     let configurator: MainConfiguratorProtocol = MainConfigurator()
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var searchField: UITextField!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
-    @IBOutlet weak var searchBar: UISearchBar!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configurator.configure(with: self)
@@ -57,6 +58,8 @@ class MainViewController: UIViewController, MainViewProtocol {
         refreshControl.addTarget(self, action: #selector(refreshCollection(_:)), for: .valueChanged)
         refreshControl.tintColor = UIColor(red:0.25, green:0.72, blue:0.85, alpha:1.0)
         loadCustomRefreshContents()
+        UserDefaults.standard.set(0,forKey: "currentState")
+        searchField.delegate = self
     
     }
     func reloadData() {
@@ -108,6 +111,16 @@ class MainViewController: UIViewController, MainViewProtocol {
 //        loadImage()
 //        collectionView.reloadData()
         
+    }
+    
+    @IBAction func searching(_ sender: Any) {
+        self.view.endEditing(true)
+        presenter.searchAct(search: self.searchField.text!)
+    }
+    
+    static func storyboardInstance() -> MainViewController? {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: "MainVC") as? MainViewController
     }
 //    func loadImage() {
 //        if Connectivity.isConnectedToInternet {

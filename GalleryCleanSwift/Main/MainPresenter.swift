@@ -22,20 +22,21 @@ protocol MainPresenterProtocol: class {
     var isNewDataLoading: Bool! { get set }
     var origin: Origin! { get set }
     func goToDetail(index: Int, destination: DetailViewController)
+    func searchAct(search: String)
 }
 
 class MainPresenter: MainPresenterProtocol {
 
     
 
-    
+    var stringSearch: String?
     var isNewDataLoading: Bool! = false
     var segment: Int! = 0
     func changeSegment(segmentRow: Int) {
         UserDefaults.standard.set(segmentRow,forKey: "currentState")
         currentArray.removeAll()
         currentPage = 1
-        self.interactor.loadImages(currentPage: currentPage, currentState: segmentRow)
+        self.interactor.loadImages(currentPage: currentPage, currentState: segmentRow, search: stringSearch ?? "")
     }
     
     
@@ -66,16 +67,19 @@ class MainPresenter: MainPresenterProtocol {
     }
     
     func congigureView() {
-        self.interactor.loadImages(currentPage: currentPage, currentState: 0)
+        self.interactor.loadImages(currentPage: currentPage, currentState: 0, search: "")
     }
     
+    func searchAct(search: String) {
+        self.interactor.loadImages(currentPage: currentPage, currentState: UserDefaults.standard.integer(forKey: "currentState"), search: search)
+    }
     
     
     func updateNextSet() {
         if currentPage < self.origin.countOfPages {
             self.isNewDataLoading = true
             self.currentPage += 1
-            self.interactor.loadImages(currentPage: currentPage, currentState: UserDefaults.standard.integer(forKey: "currentState"))
+            self.interactor.loadImages(currentPage: currentPage, currentState: UserDefaults.standard.integer(forKey: "currentState"), search: stringSearch ?? "")
             print("pagination \(UserDefaults.standard.integer(forKey: "currentState"))")
         }
     }

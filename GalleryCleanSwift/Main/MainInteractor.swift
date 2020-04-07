@@ -12,7 +12,7 @@ import RxSwift
 
 protocol MainInteractorProtocol: class {
     var origin: Origin! { get set}
-    func loadImages(currentPage: Int, currentState: Int)
+    func loadImages(currentPage: Int, currentState: Int, search: String)
 }
 
 class MainInteractor: MainInteractorProtocol {
@@ -24,12 +24,12 @@ class MainInteractor: MainInteractorProtocol {
     var origin: Origin! 
     private var currentArray: [Photo]! = []
     weak var presenter: MainPresenterProtocol!
-
+    var url: URL?
     required init(presenter: MainPresenterProtocol) {
         self.presenter = presenter
     }
     
-    func loadImages(currentPage: Int, currentState: Int) {
+    func loadImages(currentPage: Int, currentState: Int, search: String) {
         var photosURL = ""
         if currentState == 0 {
             photosURL = "http://gallery.dev.webant.ru/api/photos?new=true&page="
@@ -37,9 +37,16 @@ class MainInteractor: MainInteractorProtocol {
         else {
             photosURL = "http://gallery.dev.webant.ru/api/photos?popular=true&page="
         }
-               let url = URL(string: photosURL + String(currentPage) + "&limit=15")!
+        if search != "" {
+            print("http://gallery.dev.webant.ru/api/photos?name=" + search)
+            print(url)
+        } else {
+            url = URL(string: photosURL + String(currentPage) + "&limit=15")!
+            
+        }
+               
         self.presenter.isNewDataLoading = true
-               RxAlamofire.requestData(.get, url)
+        RxAlamofire.requestData(.get, url!)
                    .asSingle()
                    .map { (response, data) -> Origin in
                        //                   print("Response: \(response)")
@@ -58,13 +65,26 @@ class MainInteractor: MainInteractorProtocol {
                    let sequince = (startIndex..<endIndex).map{IndexPath(item: $0, section: 0)}
                    print(sequince)
                    self.presenter.isNewDataLoading = false
-                   self.presenter.currentArray.append(contentsOf: self.origin.data)
+                if search != "" {
+                    self.presenter.currentArray.removeAll()
+                    self.presenter.currentArray.append(self.origin!.data)
+                    print(self.presenter.currentArray)
+                } else {
+                    self.presenter.currentArray.append(contentsOf: self.origin.data)
+                }
                 self.presenter.origin = model
                 if currentPage == 1 {
                     self.presenter.view.reloadData()
                 }
                 else {
-                    self.presenter.view.insertItems(sequince: sequince)
+                    if search != "" {
+                        self.presenter.view.reloadData()
+                    }
+                    else {
+                        self.presenter.view.insertItems(sequince: sequince)
+                        
+                    }
+                    
                 }
                }) { (error) in
                    //handle error

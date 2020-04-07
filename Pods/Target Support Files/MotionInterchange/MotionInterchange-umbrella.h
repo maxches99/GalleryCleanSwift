@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "CAMediaTimingFunction+MDMTimingCurve 2.h"
 #import "CAMediaTimingFunction+MDMTimingCurve.h"
 #import "MDMAnimationTraits.h"
 #import "MDMMotionCurve.h"

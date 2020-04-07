@@ -18,10 +18,12 @@ class LoginRouter: LoginRouterProtocol {
     init(viewController: LoginViewController) {
         self.viewController = viewController
     }
-    
+
     func closeCurrentViewController() {
         //viewController.dismiss(animated: true, completion: nil)
         //viewController.performSegue(withIdentifier: "firstStep", sender: self)
+        let testVC = TabBarController.storyboardInstance()
+        viewController.present(testVC!, animated: true, completion: nil)
         
     }
     

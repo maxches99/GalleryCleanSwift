@@ -14,6 +14,7 @@ target 'GalleryCleanSwift' do
   pod 'OAuthSwift'
   pod 'p2.OAuth2'
   pod 'RxNetworkApiClient'
+  pod 'PromiseKit', '~> 6.8'
   # Pods for GalleryCleanSwift
 
 end

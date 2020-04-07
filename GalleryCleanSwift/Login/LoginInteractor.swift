@@ -9,7 +9,7 @@
 import Foundation
 
 protocol LoginInteractorProtocol: class {
-    func loginUrl(mail: String, password: String)
+    func loginUrl(mail: String, password: String) -> String
 }
 
 class LoginInteractor: LoginInteractorProtocol {
@@ -22,9 +22,8 @@ class LoginInteractor: LoginInteractorProtocol {
         self.presenter = presenter
     }
     
-    func loginUrl(mail: String, password: String) {
+    func loginUrl(mail: String, password: String) -> String {
         print("interactor")
-        serverService.login(mail: mail, password: password)
-        presenter.router.closeCurrentViewController()
+        return serverService.login(mail: mail, password: password)
     }
 }

@@ -30,7 +30,12 @@ class LoginPresenter: LoginPresenterProtocol {
     
     func loginButtonClicked(mail: String, password: String) {
         print("presenter")
-        interactor.loginUrl(mail: mail, password: password)
+        let str = interactor.loginUrl(mail: mail, password: password)
+        if str != "OK" {
+            self.view.uncorrectPassword.alpha = 1.0
+        } else {
+            self.router.closeCurrentViewController()
+        }
     }
     
     
