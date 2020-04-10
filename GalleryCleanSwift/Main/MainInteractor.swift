@@ -33,12 +33,23 @@ class MainInteractor: MainInteractorProtocol {
         var photosURL = ""
         if currentState == 0 {
             photosURL = "http://gallery.dev.webant.ru/api/photos?new=true&page="
+            if search != "" {
+                photosURL = "http://gallery.dev.webant.ru/api/photos?name=" + search + "&new=true&page="
+                print("http://gallery.dev.webant.ru/api/photos?name=" + search + "&new=true&page=")
+                print(url)
+            }
         }
         else {
             photosURL = "http://gallery.dev.webant.ru/api/photos?popular=true&page="
+            if search != "" {
+                photosURL = "http://gallery.dev.webant.ru/api/photos?name=" + search + "&popular=true&page="
+                print("http://gallery.dev.webant.ru/api/photos?name=" + search + "&popular=true&page=")
+                print(url)
+            }
         }
         if search != "" {
             print("http://gallery.dev.webant.ru/api/photos?name=" + search)
+            url = URL(string: photosURL + String(currentPage) + "&limit=15")!
             print(url)
         } else {
             url = URL(string: photosURL + String(currentPage) + "&limit=15")!
@@ -67,7 +78,7 @@ class MainInteractor: MainInteractorProtocol {
                    self.presenter.isNewDataLoading = false
                 if search != "" {
                     self.presenter.currentArray.removeAll()
-                    self.presenter.currentArray.append(self.origin!.data)
+                    self.presenter.currentArray.append(contentsOf: self.origin!.data)
                     print(self.presenter.currentArray)
                 } else {
                     self.presenter.currentArray.append(contentsOf: self.origin.data)

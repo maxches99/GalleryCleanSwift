@@ -13,7 +13,6 @@
 		495A29BB23FC286C005B0D3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495A29B923FC286C005B0D3B /* Main.storyboard */; };
 		495A29BD23FC2870005B0D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495A29BC23FC2870005B0D3B /* Assets.xcassets */; };
 		495A29C023FC2870005B0D3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495A29BE23FC2870005B0D3B /* LaunchScreen.storyboard */; };
-		497FA7FB240D01CA0006C0EF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FA7FA240D01C90006C0EF /* TabBarController.swift */; };
 		498388AA23FD2CCA0023DFE5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498388A923FD2CCA0023DFE5 /* LoginViewController.swift */; };
 		498388AC23FD2CE70023DFE5 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498388AB23FD2CE70023DFE5 /* LoginPresenter.swift */; };
 		498388AE23FD2CF70023DFE5 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498388AD23FD2CF70023DFE5 /* LoginInteractor.swift */; };
@@ -49,14 +48,14 @@
 		4983891E23FE86C70023DFE5 /* OAuth2RetryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983891D23FE86C60023DFE5 /* OAuth2RetryHandler.swift */; };
 		4983892123FEC1830023DFE5 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983892023FEC1830023DFE5 /* Token.swift */; };
 		4984C7E924051D5F005E7927 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4984C7EB24051D5F005E7927 /* Localizable.strings */; };
+		499946AC2440CECF00A44ADC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499946AB2440CECE00A44ADC /* TabBarController.swift */; };
 		49A0260723FFD6E0004F262C /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0260623FFD6E0004F262C /* MainCollectionViewCell.swift */; };
 		49A0260B23FFE550004F262C /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0260A23FFE550004F262C /* Photo.swift */; };
 		49BD8A46240FD41000F68BBD /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD8A45240FD41000F68BBD /* ProfileCollectionViewCell.swift */; };
-		C4E6B2A2FDD5F52E712A3AF2 /* libPods-GalleryCleanSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85570696C47B727694A889F2 /* libPods-GalleryCleanSwift.a */; };
+		E324E43DF895FA9ABB1A6201 /* libPods-GalleryCleanSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 911569581B5FC86B9230C3A9 /* libPods-GalleryCleanSwift.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1F2AAEA414FBEB0646D904AB /* Pods-GalleryCleanSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GalleryCleanSwift.debug.xcconfig"; path = "Target Support Files/Pods-GalleryCleanSwift/Pods-GalleryCleanSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		495A29B023FC286C005B0D3B /* GalleryCleanSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GalleryCleanSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495A29B323FC286C005B0D3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		495A29B523FC286C005B0D3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +64,6 @@
 		495A29BC23FC2870005B0D3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		495A29BF23FC2870005B0D3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		495A29C123FC2870005B0D3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		497FA7FA240D01C90006C0EF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = /Users/maksimcesnikov/Desktop/GalleryCleanSwift/GalleryCleanSwift/TabBarController.swift; sourceTree = "<absolute>"; };
 		498388A923FD2CCA0023DFE5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		498388AB23FD2CE70023DFE5 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		498388AD23FD2CF70023DFE5 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
@@ -102,6 +100,7 @@
 		4983892023FEC1830023DFE5 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		4984C7EA24051D5F005E7927 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4984C7EC24051D66005E7927 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		499946AB2440CECE00A44ADC /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = "../../../Downloads/MaxGalleryCleanSwift1 2/GalleryCleanSwift/TabBarController.swift"; sourceTree = "<group>"; };
 		49A0260623FFD6E0004F262C /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		49A0260823FFDDBB004F262C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		49A0260923FFDDBC004F262C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -109,8 +108,9 @@
 		49BAB94023FFBBE9009595AB /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Main.strings"; sourceTree = "<group>"; };
 		49BAB94123FFBBEA009595AB /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		49BD8A45240FD41000F68BBD /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
-		85570696C47B727694A889F2 /* libPods-GalleryCleanSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GalleryCleanSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8611D1E22B2F1124DED6E5C3 /* Pods-GalleryCleanSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GalleryCleanSwift.release.xcconfig"; path = "Target Support Files/Pods-GalleryCleanSwift/Pods-GalleryCleanSwift.release.xcconfig"; sourceTree = "<group>"; };
+		4E3E926E84D46FEE026ED08B /* Pods-GalleryCleanSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GalleryCleanSwift.debug.xcconfig"; path = "Target Support Files/Pods-GalleryCleanSwift/Pods-GalleryCleanSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		911569581B5FC86B9230C3A9 /* libPods-GalleryCleanSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GalleryCleanSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C68EEE3D0EEF270DA7C390FA /* Pods-GalleryCleanSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GalleryCleanSwift.release.xcconfig"; path = "Target Support Files/Pods-GalleryCleanSwift/Pods-GalleryCleanSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4E6B2A2FDD5F52E712A3AF2 /* libPods-GalleryCleanSwift.a in Frameworks */,
+				E324E43DF895FA9ABB1A6201 /* libPods-GalleryCleanSwift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +131,7 @@
 				495A29B223FC286C005B0D3B /* GalleryCleanSwift */,
 				495A29B123FC286C005B0D3B /* Products */,
 				ABA65BD5B3E075C7D47F6DD9 /* Pods */,
-				7CD5FF45C3557C2BEBA946AE /* Frameworks */,
+				56FDC44EA585BA8F9631360F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,7 +156,7 @@
 				495A29B323FC286C005B0D3B /* AppDelegate.swift */,
 				495A29B523FC286C005B0D3B /* SceneDelegate.swift */,
 				495A29B723FC286C005B0D3B /* ViewController.swift */,
-				497FA7FA240D01C90006C0EF /* TabBarController.swift */,
+				499946AB2440CECE00A44ADC /* TabBarController.swift */,
 				4984C7EB24051D5F005E7927 /* Localizable.strings */,
 				495A29B923FC286C005B0D3B /* Main.storyboard */,
 				495A29BC23FC2870005B0D3B /* Assets.xcassets */,
@@ -268,10 +268,10 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
-		7CD5FF45C3557C2BEBA946AE /* Frameworks */ = {
+		56FDC44EA585BA8F9631360F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				85570696C47B727694A889F2 /* libPods-GalleryCleanSwift.a */,
+				911569581B5FC86B9230C3A9 /* libPods-GalleryCleanSwift.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -279,8 +279,8 @@
 		ABA65BD5B3E075C7D47F6DD9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1F2AAEA414FBEB0646D904AB /* Pods-GalleryCleanSwift.debug.xcconfig */,
-				8611D1E22B2F1124DED6E5C3 /* Pods-GalleryCleanSwift.release.xcconfig */,
+				4E3E926E84D46FEE026ED08B /* Pods-GalleryCleanSwift.debug.xcconfig */,
+				C68EEE3D0EEF270DA7C390FA /* Pods-GalleryCleanSwift.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -292,11 +292,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 495A29C423FC2870005B0D3B /* Build configuration list for PBXNativeTarget "GalleryCleanSwift" */;
 			buildPhases = (
-				87A383EE9B4C7CDC6DB54CA5 /* [CP] Check Pods Manifest.lock */,
+				3E6EBBCB67DC08770E417511 /* [CP] Check Pods Manifest.lock */,
 				495A29AC23FC286C005B0D3B /* Sources */,
 				495A29AD23FC286C005B0D3B /* Frameworks */,
 				495A29AE23FC286C005B0D3B /* Resources */,
-				98A2BA3B20D66B8874105E52 /* [CP] Copy Pods Resources */,
+				310467570BFA627BF50E9CE8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -357,7 +357,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		87A383EE9B4C7CDC6DB54CA5 /* [CP] Check Pods Manifest.lock */ = {
+		310467570BFA627BF50E9CE8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GalleryCleanSwift/Pods-GalleryCleanSwift-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GalleryCleanSwift/Pods-GalleryCleanSwift-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GalleryCleanSwift/Pods-GalleryCleanSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E6EBBCB67DC08770E417511 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -377,23 +394,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		98A2BA3B20D66B8874105E52 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GalleryCleanSwift/Pods-GalleryCleanSwift-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GalleryCleanSwift/Pods-GalleryCleanSwift-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GalleryCleanSwift/Pods-GalleryCleanSwift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -428,6 +428,7 @@
 				498388B823FD2D720023DFE5 /* MainInteractor.swift in Sources */,
 				498388E223FD2FAD0023DFE5 /* ProfileSettingsConfigurator.swift in Sources */,
 				4983892123FEC1830023DFE5 /* Token.swift in Sources */,
+				499946AC2440CECF00A44ADC /* TabBarController.swift in Sources */,
 				498388C423FD2EC10023DFE5 /* NewPhotoConfigurator.swift in Sources */,
 				498388E023FD2F9D0023DFE5 /* ProfileSettingsInteractor.swift in Sources */,
 				498388E623FD3EED0023DFE5 /* ServerService.swift in Sources */,
@@ -437,7 +438,6 @@
 				495A29B623FC286C005B0D3B /* SceneDelegate.swift in Sources */,
 				498388B423FD2D410023DFE5 /* MainViewController.swift in Sources */,
 				498388D623FD2F4C0023DFE5 /* DetailInteractor.swift in Sources */,
-				497FA7FB240D01CA0006C0EF /* TabBarController.swift in Sources */,
 				498388B223FD2D180023DFE5 /* LoginRouter.swift in Sources */,
 				498388BE23FD2E2C0023DFE5 /* NewPhotoViewController.swift in Sources */,
 				498388CA23FD2EF40023DFE5 /* ProfilePresenter.swift in Sources */,
@@ -600,7 +600,7 @@
 		};
 		495A29C523FC2870005B0D3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F2AAEA414FBEB0646D904AB /* Pods-GalleryCleanSwift.debug.xcconfig */;
+			baseConfigurationReference = 4E3E926E84D46FEE026ED08B /* Pods-GalleryCleanSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -619,7 +619,7 @@
 		};
 		495A29C623FC2870005B0D3B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8611D1E22B2F1124DED6E5C3 /* Pods-GalleryCleanSwift.release.xcconfig */;
+			baseConfigurationReference = C68EEE3D0EEF270DA7C390FA /* Pods-GalleryCleanSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

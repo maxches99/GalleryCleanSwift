@@ -40,7 +40,6 @@ PODS:
     - RxSwift (~> 5)
   - RxSwift (5.1.0)
   - SwiftyJSON (5.0.0)
-  - TransitionableTab (0.2.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -53,7 +52,6 @@ DEPENDENCIES:
   - RxCocoa (~> 5)
   - RxNetworkApiClient
   - RxSwift (~> 5)
-  - TransitionableTab (~> 0.2.0)
 
 SPEC REPOS:
   trunk:
@@ -72,7 +70,6 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - SwiftyJSON
-    - TransitionableTab
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
@@ -90,8 +87,7 @@ SPEC CHECKSUMS:
   RxRelay: a168bd6caf712d00c676ac344e9295afc93b418e
   RxSwift: ad5874f24bb0dbffd1e9bb8443604e3578796c7a
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
-  TransitionableTab: 54a5d0af475033bdb83959fde4e5d6201af7e2ab
 
-PODFILE CHECKSUM: 670636f42d83fb829456fb5f87ef4ba21db3dca4
+PODFILE CHECKSUM: aaca4e8a51f9479d13000eb82125cffe55ea1c8c
 
 COCOAPODS: 1.8.4
