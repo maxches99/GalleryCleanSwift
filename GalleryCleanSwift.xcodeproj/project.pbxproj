@@ -48,7 +48,7 @@
 		4983891E23FE86C70023DFE5 /* OAuth2RetryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983891D23FE86C60023DFE5 /* OAuth2RetryHandler.swift */; };
 		4983892123FEC1830023DFE5 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983892023FEC1830023DFE5 /* Token.swift */; };
 		4984C7E924051D5F005E7927 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4984C7EB24051D5F005E7927 /* Localizable.strings */; };
-		499946AC2440CECF00A44ADC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499946AB2440CECE00A44ADC /* TabBarController.swift */; };
+		499946AE2440D3EF00A44ADC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499946AD2440D3EF00A44ADC /* TabBarController.swift */; };
 		49A0260723FFD6E0004F262C /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0260623FFD6E0004F262C /* MainCollectionViewCell.swift */; };
 		49A0260B23FFE550004F262C /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0260A23FFE550004F262C /* Photo.swift */; };
 		49BD8A46240FD41000F68BBD /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD8A45240FD41000F68BBD /* ProfileCollectionViewCell.swift */; };
@@ -100,7 +100,7 @@
 		4983892023FEC1830023DFE5 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		4984C7EA24051D5F005E7927 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4984C7EC24051D66005E7927 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		499946AB2440CECE00A44ADC /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = "../../../Downloads/MaxGalleryCleanSwift1 2/GalleryCleanSwift/TabBarController.swift"; sourceTree = "<group>"; };
+		499946AD2440D3EF00A44ADC /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		49A0260623FFD6E0004F262C /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		49A0260823FFDDBB004F262C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		49A0260923FFDDBC004F262C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -154,9 +154,9 @@
 				498388A323FD27A40023DFE5 /* Main */,
 				495A29C723FC298C005B0D3B /* Login */,
 				495A29B323FC286C005B0D3B /* AppDelegate.swift */,
+				499946AD2440D3EF00A44ADC /* TabBarController.swift */,
 				495A29B523FC286C005B0D3B /* SceneDelegate.swift */,
 				495A29B723FC286C005B0D3B /* ViewController.swift */,
-				499946AB2440CECE00A44ADC /* TabBarController.swift */,
 				4984C7EB24051D5F005E7927 /* Localizable.strings */,
 				495A29B923FC286C005B0D3B /* Main.storyboard */,
 				495A29BC23FC2870005B0D3B /* Assets.xcassets */,
@@ -428,7 +428,7 @@
 				498388B823FD2D720023DFE5 /* MainInteractor.swift in Sources */,
 				498388E223FD2FAD0023DFE5 /* ProfileSettingsConfigurator.swift in Sources */,
 				4983892123FEC1830023DFE5 /* Token.swift in Sources */,
-				499946AC2440CECF00A44ADC /* TabBarController.swift in Sources */,
+				499946AE2440D3EF00A44ADC /* TabBarController.swift in Sources */,
 				498388C423FD2EC10023DFE5 /* NewPhotoConfigurator.swift in Sources */,
 				498388E023FD2F9D0023DFE5 /* ProfileSettingsInteractor.swift in Sources */,
 				498388E623FD3EED0023DFE5 /* ServerService.swift in Sources */,
